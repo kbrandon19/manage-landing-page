@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .container .nav {
@@ -46,6 +47,7 @@ body {
 }
 
 .container .intro {
+  position: relative;
   width: auto;
   height: auto;
   padding: 0 2rem;
@@ -61,8 +63,8 @@ body {
 .container .intro .top-bg-pattern img {
   position: absolute;
   width: 100%;
-  top: -10px;
-  right: -50px;
+  top: -150px;
+  right: -70px;
   z-index: -1;
 }
 
@@ -120,6 +122,7 @@ body {
   width: auto;
   height: auto;
   padding: 0 2rem;
+  margin-top: 4.5rem;
 }
 
 .container .info .info-text {
@@ -139,5 +142,57 @@ body {
   font-weight: 300;
   line-height: 2;
   font-size: 14px;
+}
+
+.container .label-container .label {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container .label-container .label .label-number {
+  position: absolute;
+  background-color: #f25f3a;
+  width: 40px;
+  text-align: center;
+  padding: 4px 10px;
+  border-radius: 25px;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.container .label-container .label .label-number p {
+  margin: 2px;
+  vertical-align: middle;
+}
+
+.container .label-container .label .label-attribute {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #ffefeb;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.container .label-container .label .label-attribute p {
+  font-weight: 700;
+  margin: 0px 0px 0px 15px;
+}
+
+.container .label-container .label-text {
+  padding: 0 1rem;
+}
+
+.container .label-container .label-text p {
+  color: #9095a7;
 }
 /*# sourceMappingURL=style.css.map */
