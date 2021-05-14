@@ -14,10 +14,11 @@ p{font-size:1rem;}
 
 .cta-btn{
     text-decoration: none;
-    padding:.5rem 1.5rem;
+    padding:.8rem 2rem;
     background:$bright-red;
     color:#ffffff;
-    font-size:.7rem;
+    font-weight: 600;
+    font-size:.8rem;
     border-radius:25px;
     box-shadow: 0px 10px 15px -8px $bright-red;
 }
@@ -278,7 +279,7 @@ body{
 
 .banner{
     width:100%;
-    height:auto;
+    height:300px;
     text-align: center;
 
     background-color: $bright-red;
@@ -298,4 +299,86 @@ body{
             
 }
     
+}
+
+.footer{
+    width:auto;
+    height:auto;
+    padding: 3rem 1rem .5rem 1rem;
+    background-color: $very-dark-blue;
+
+    .grid{
+        width:100%;
+        display:grid;
+        gap:3rem;
+        grid-template-columns: auto;
+       
+        grid-template-areas: 
+        "email"
+        "sitemap"
+        "social"
+        "logo"
+        "copy";
+        text-align: center;
+
+        .social{
+            grid-area:social;
+           
+            .social-icons img{
+                width:9%;
+                padding:0 15px;
+            }
+        }
+
+        .logo{grid-area: logo;}
+
+        .email{
+            grid-area: email;
+          
+            form{
+                height:40px;
+                width:auto;
+                
+                
+            input{
+                height:100%;
+                width:60%;
+                outline:none;
+                border:none;
+                border-radius:50px;
+                padding:0 0 0 2rem;
+                margin-right:10px;
+                
+            }
+
+            button{
+                cursor: pointer;
+                border-radius: 50px;
+                outline:none;
+                border:none;
+                background-color:$bright-red;
+                color:#ffffff;
+                height:100%;
+                width:75px;
+            }
+        }
+        }
+
+        .sitemap{
+            display:flex;
+            grid-area: sitemap;
+            text-align: left;
+            justify-content: space-around;
+            align-items: top;
+            
+            .sitemap-link-l a,.sitemap-link-r a{
+                display:block;
+                padding:.4rem 0;
+                text-decoration: none;
+                color:#ffffff;
+            }
+        }
+        .copy{grid-area: copy;p{margin:0;}}
+    }
+
 }

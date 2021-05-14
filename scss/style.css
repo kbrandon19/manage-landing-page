@@ -4,10 +4,11 @@ p {
 
 .cta-btn {
   text-decoration: none;
-  padding: .5rem 1.5rem;
+  padding: .8rem 2rem;
   background: #f25f3a;
   color: #ffffff;
-  font-size: .7rem;
+  font-weight: 600;
+  font-size: .8rem;
   border-radius: 25px;
   -webkit-box-shadow: 0px 10px 15px -8px #f25f3a;
           box-shadow: 0px 10px 15px -8px #f25f3a;
@@ -275,7 +276,7 @@ body {
 
 .banner {
   width: 100%;
-  height: auto;
+  height: 300px;
   text-align: center;
   background-color: #f25f3a;
   padding: 3rem 0;
@@ -292,5 +293,104 @@ body {
   font-size: 2.3rem;
   font-weight: 500;
   line-height: 1.3;
+}
+
+.footer {
+  width: auto;
+  height: auto;
+  padding: 3rem 1rem .5rem 1rem;
+  background-color: #1d1e25;
+}
+
+.footer .grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      grid-template-areas: "email" "sitemap" "social" "logo" "copy";
+  text-align: center;
+}
+
+.footer .grid .social {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: social;
+}
+
+.footer .grid .social .social-icons img {
+  width: 9%;
+  padding: 0 15px;
+}
+
+.footer .grid .logo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.footer .grid .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.footer .grid .email form {
+  height: 40px;
+  width: auto;
+}
+
+.footer .grid .email form input {
+  height: 100%;
+  width: 60%;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 0 0 0 2rem;
+  margin-right: 10px;
+}
+
+.footer .grid .email form button {
+  cursor: pointer;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #f25f3a;
+  color: #ffffff;
+  height: 100%;
+  width: 75px;
+}
+
+.footer .grid .sitemap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sitemap;
+  text-align: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.footer .grid .sitemap .sitemap-link-l a, .footer .grid .sitemap .sitemap-link-r a {
+  display: block;
+  padding: .4rem 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer .grid .copy {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: copy;
+}
+
+.footer .grid .copy p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -31,8 +31,3 @@ uctivity solution.
   Careers
   Community
   Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
