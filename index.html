@@ -7,12 +7,16 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="stylesheet" href="/scss/style.css">
+
   <!-- Font Family: Vietnam -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;0,700;1,500&display=swap"
     rel="stylesheet">
+
+
+   
+
 
 
   <title>Manage Landing Page</title>
@@ -25,7 +29,7 @@
   <!-- wrappers the entire first section-->
   <div class="container">
 
-
+<!-- Navigation-->
     <header>
       <nav class="nav">
         <div class="logo">
@@ -38,13 +42,28 @@
           <div class="cta-btn"></div>
         </div>
 
-        <div class="ham">
-          <img src="./images/icon-hamburger.svg" alt="">
+        <div class="ham" id="ham">
+          <img src="./images/icon-hamburger.svg" class="open" alt="">
+          <img src="./images/icon-close.svg" class="close" alt="">
+
+        </div>
+
+        <div class="mobile-nav mobile" id="mobile-nav">
+          <div class="mobile-nav-links">
+            <p>Pricing</p>
+            <p>Product</p>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Community</p>
+           
+          </div>
         </div>
 
       </nav>
     </header>
 
+
+    <!-- Intro -->
     <div class="intro">
 
       <div class="top-bg-pattern">
@@ -68,6 +87,7 @@
 
     </div>
 
+    <!-- Info -->
     <div class="info">
       <div class="info-text">
         <h2> What’s different about Manage?</h2>
@@ -80,6 +100,7 @@
   <!-- end of container wrapper-->
 
   <!-- Start of labels-->
+
   <div class="container">
     <div class="label-container">
       <div class="label-one">
@@ -131,7 +152,7 @@
   </div>
   <!-- End of labels-->
 
-  <!-- Profile Carousel-->
+  <!-- Profile Card -->
 
   <div class="profile-card">
     <div class="profile-card-title">
@@ -158,7 +179,7 @@
           and focused. I can’t stop recommending them to everyone I talk to!”</p>
       </div>
       <div class="card-four">
-        <img class="profile-img" src="./images/avatar-richard.png" alt="">
+        <img class="profile-img" src="./images/avatar-ali.png" alt="">
         <h4>Richard Watts</h4>
         <p> “Manage allows us to provide structure and process. It keeps us organized
           and focused. I can’t stop recommending them to everyone I talk to!”</p>
@@ -166,10 +187,10 @@
 
     </div>
     <div class="profile-card-state">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
+      <div class="card1 bubble"></div>
+      <div class="card2 bubble"></div>
+      <div class="card3 bubble"></div>
+      <div class="card4 bubble"></div>
 
     </div>
     <div class="profil-card-cta">
@@ -178,6 +199,9 @@
   </div>
 
 
+
+  <!-- Banner -->
+
   <div class="banner">
     <div class="banner-content">
       <h2>Simplify how your team works today.</h2>
@@ -185,10 +209,15 @@
     </div>
   </div>
 
+
+
+
+  <!-- Footer -->
+
   <footer class="footer">
     <div class="grid">
       <div class="logo">
-        <img src="/images/logo.svg" alt="">
+        <img src="/images/logo-foot.svg" alt="">
       </div>
       <div class="social">
         <div class="social-icons">
@@ -197,7 +226,7 @@
           <img src="./images/icon-twitter.svg" alt="">
           <img src="./images/icon-pinterest.svg" alt="">
           <img src="./images/icon-instagram.svg" alt="">
-          
+
         </div>
       </div>
       <div class="sitemap">
@@ -216,16 +245,20 @@
       <div class="email">
         <form action="#">
           <input type="email" name="Email" placeholder="Updates in your inbox…" id="email_address">
+          <p class="error-message">Please provide validate email!</p>
           <button type="submit">Go</button>
-          
-          
+
+
         </form>
       </div>
-      <div class="copy"><p>Copyright 2020. All Rights Reserved</p></div>
+      <div class="copy">
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
     </div>
   </footer>
 
+  <script src="./js/main.js"></script>
 
+  
 </body>
-
 </html>

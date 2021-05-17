@@ -65,6 +65,43 @@ body {
   vertical-align: middle;
 }
 
+.container .nav .close {
+  display: none;
+}
+
+.container .nav .mobile-nav {
+  position: absolute;
+  top: 120px;
+  display: none;
+  left: -225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.container .nav .mobile-nav .mobile-nav-links p {
+  line-height: 2;
+  color: #242d52;
+  font-weight: 600;
+}
+
+.container .nav .mobile-nav.active {
+  display: block;
+  left: 25px;
+  right: 25px;
+}
+
 .container .intro {
   position: relative;
   width: auto;
@@ -298,7 +335,7 @@ body {
 .footer {
   width: auto;
   height: auto;
-  padding: 3rem 1rem .5rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
   background-color: #1d1e25;
 }
 
@@ -351,6 +388,22 @@ body {
   margin-right: 10px;
 }
 
+.footer .grid .email form input::-webkit-input-placeholder {
+  color: #9095a7;
+}
+
+.footer .grid .email form input:-ms-input-placeholder {
+  color: #9095a7;
+}
+
+.footer .grid .email form input::-ms-input-placeholder {
+  color: #9095a7;
+}
+
+.footer .grid .email form input::placeholder {
+  color: #9095a7;
+}
+
 .footer .grid .email form button {
   cursor: pointer;
   border-radius: 50px;
@@ -360,6 +413,18 @@ body {
   color: #ffffff;
   height: 100%;
   width: 75px;
+}
+
+.footer .grid .email form .error-message {
+  display: none;
+  position: absolute;
+  color: #f25f3a;
+  left: 40px;
+  font-size: 14px;
+}
+
+.footer .grid .email form .error-message.active {
+  display: block;
 }
 
 .footer .grid .sitemap {
@@ -382,6 +447,7 @@ body {
   padding: .4rem 0;
   text-decoration: none;
   color: #ffffff;
+  font-size: .9rem;
 }
 
 .footer .grid .copy {
@@ -392,5 +458,7 @@ body {
 
 .footer .grid .copy p {
   margin: 0;
+  color: #9095a7;
+  font-size: .8rem;
 }
 /*# sourceMappingURL=style.css.map */
